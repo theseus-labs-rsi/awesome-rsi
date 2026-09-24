@@ -7,7 +7,7 @@
 <strong>A taxonomy-first, auditable map of recursive self-improvement research.</strong>
 
 <p>
-  <a href="#paper-catalog"><img alt="Papers" src="https://img.shields.io/badge/papers-519-2563eb?style=flat-square"></a>
+  <a href="#paper-catalog"><img alt="Papers" src="https://img.shields.io/badge/papers-520-2563eb?style=flat-square"></a>
   <a href="https://arxiv.org/abs/2609.11873"><img alt="Companion survey" src="https://img.shields.io/badge/Companion%20Survey-arXiv%3A2609.11873-b31b1b?style=flat-square&amp;logo=arxiv&amp;logoColor=white"></a>
   <a href="#taxonomy-at-a-glance"><img alt="Taxonomy" src="https://img.shields.io/badge/taxonomy-L1--L5-7c3aed?style=flat-square"></a>
 </p>
@@ -42,9 +42,12 @@ RSI is the capability of an intelligent system to transform acquired experience 
 
 ## Latest Updates <sub><a href="#readme-top">↑ top</a></sub>
 
-This section logs material updates to this repository, including new source-verified research, industry coverage, and curation. It is editorially separate from the 519-paper taxonomy, so a release, project page, or repository update is never presented as a peer-reviewed paper by default.
+This section logs material updates to this repository, including new source-verified research, industry coverage, and curation. It is editorially separate from the 520-paper taxonomy, so a release, project page, or repository update is never presented as a peer-reviewed paper by default.
 
-1. **2026-09-19 — Public Industry Practices added:** A new [source-verified timeline](#industry-practices) records **11** publicly disclosed cases in which AI systems contribute to AI R&D, training or inference infrastructure, or retained self-improvement loops. Each entry distinguishes the reported result from the limits of its RSI claim. [[Browse the timeline](#industry-practices)]
+1. **2026-09-24 — Paper and industry coverage expanded:** Added [GPTSwarm](https://arxiv.org/abs/2402.16823) to the [L2 catalog](#2-l2---autonomy-over-improvement-strategies), added two [industry cases](#industry-practices), and linked a related agent-focused survey in [Reading Paths](#reading-paths) after checking their primary sources.
+   ![](https://img.shields.io/badge/-Repository-475569) ![](https://img.shields.io/badge/-Research-2563eb) ![](https://img.shields.io/badge/-Industry-0f766e)
+
+1. **2026-09-19 — Public Industry Practices added:** A new [source-verified timeline](#industry-practices) launched with **11** publicly disclosed cases in which AI systems contribute to AI R&D, training or inference infrastructure, or retained self-improvement loops. Each entry distinguishes the reported result from the limits of its RSI claim. [[Browse the timeline](#industry-practices)]
    ![](https://img.shields.io/badge/-Repository-475569) ![](https://img.shields.io/badge/-Industry-0f766e) ![](https://img.shields.io/badge/-Curation-7c3aed)
 
 1. **2026-09-10 — Companion survey released:** [*The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement*](https://arxiv.org/abs/2609.11873) introduces HCI and the L1-L5 RSI roadmap used by this repository. [[Paper](https://arxiv.org/abs/2609.11873)]
@@ -72,17 +75,19 @@ Entries are ordered by publication date (newest first). “Boundary” names the
 | --- | --- | --- | --- |
 | 2026-09-17 | [Z.ai — *How GLM Built Its Own Inference Infrastructure*](https://z.ai/blog/glm-built-its-inference-infrastructure) | GLM-5.3 proposed and validated optimizations for the production inference infrastructure serving GLM-5.3-Flash, using correctness checks, execution traces, microbenchmarks, and end-to-end measurements. | Production-ready in under two weeks; end-to-end throughput reached about **3×** the initial version. This improves serving infrastructure, not GLM's own weights. |
 | 2026-09-17 | [Anthropic — *Measurements for Understanding the Pace of AI Development Inside Frontier Labs*](https://www.anthropic.com/institute/measuring-pace-of-ai-development) | Anthropic measured Claude's participation across its internal AI-development work. | As of August 2026, Claude was reported to lead about **26%** of measured AI-R&D work and to collaborate on over **90%**; no measured task category was fully autonomous. |
+| 2026-09-06 | [OpenAI — *Research Acceleration: The View Inside OpenAI*](https://openai.com/index/research-acceleration-view-inside-openai/) | OpenAI researchers used coding agents for research code, experiment support, and infrastructure troubleshooting; the organization measured their use across the AI R&D workflow. | By mid-August, agent runtime amounted to **3.1 eight-hour agent-days per human workday** across the research organization. This measures activity, not research productivity; over half of successful tasks estimated at 4–8 human hours still involved human intervention. |
 | 2026-08-28 | [Tencent Hunyuan — *Tencent Releases and Open-Sources Tencent Hy4 Preview*](https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/) | Hy4 preview participated in its own R&D, including training methods, data strategy, evaluation, and low-level operator optimization; it also iterated on inference-system bottlenecks using experimental feedback. | Tencent reports **31.8%** end-to-end inference-throughput improvement. The objectives and acceptance process remain externally defined. |
 | 2026-07-29 | [OpenAI — *How GPT-5.6 Fuses Frontier Intelligence with Frontier Efficiency*](https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/) | GPT-5.6 Sol analyzed production workloads, tested routing and forward-pass changes, rewrote production Triton/Gluon operators, and ran architecture experiments for speculative-decoding models. | OpenAI reports **20%** lower end-to-end serving cost and over **15%** token-generation efficiency improvement for speculative decoding. Neither figure means the base model retrained itself. |
 | 2026-07-16 | [Moonshot AI — *Kimi K3: Open Frontier Intelligence*](https://www.kimi.com/en/blog/kimi-k3) | Early K3 versions performed most of the team's operator-optimization work late in K3 development, including attention-kernel work and a MiniTriton compiler demonstration. | This is model-assisted development of the software stack; the post does not establish a corresponding whole-training speedup or autonomous model development. |
 | 2026-06-23 | [ByteDance Seed — *Seed2.1 Officially Released: Advancing AI Productivity*](https://seed.bytedance.com/en/blog/seed2-1-officially-released-advancing-ai-productivity) | Through “Seed for Seed,” Seed2.1 entered internal model R&D for evaluation, diagnosis, SFT data, RL-framework optimization, paper reproduction, and experiment validation, with multi-round use of intermediate artifacts and feedback. | Some tasks reportedly run for hours to tens of days. The post does not quantify an independent contribution to the final model or claim end-to-end autonomy. |
+| 2026-06-11 | [Recursive — *First Steps Toward Automated AI Research*](https://www.recursive.com/articles/first-steps-toward-automated-ai-research) | An automated research system proposed changes, implemented them, ran and validated experiments, and reused context from earlier runs across small-model training and GPU-kernel benchmarks. | Recursive reports **0.9109** validation BPB on NanoChat Autoresearch versus **0.9372** for its comparison baseline. These are bounded benchmark results, not evidence that a frontier training pipeline is autonomously improving itself. |
 | 2026-06 | [Anthropic — *When AI Builds Itself*](https://www.anthropic.com/institute/recursive-self-improvement) | Claude investigated training-cluster failures, modified training code, ran experiments, and reviewed code in Anthropic's development workflow. | Anthropic reports that over **80%** of merged code was attributable to Claude as of May 2026. Controlled training-code experiments should not be read as whole-frontier-training speedups. |
 | 2026-05 | [OpenBMB — *ForgeTrain: An LLM Pretraining Framework Built End-to-End by an Autonomous Agent Loop*](https://github.com/OpenBMB/ForgeTrain) | An autonomous coding-agent loop wrote, debugged, and optimized an LLM pretraining framework end-to-end, repeatedly launching training jobs, parsing logs, diagnosing failures, patching code, and passing validation gates. The resulting framework completed MiniCPM4-0.5B pretraining and produced usable model weights. | OpenBMB reports **44.13% MFU** on 64×H100, about **10% above** its Megatron-LM baseline. The coding agent was external to MiniCPM; the harness, gates, objectives, and reference stack remained externally designed. |
 | 2026-04-02 | [Meta — *KernelEvolve*](https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/) | Meta's Ranking Engineer Agent autonomously designed, executed, and analyzed model experiments; KernelEvolve retained a search tree while iterating through code generation, compilation, correctness checks, and performance tests for kernels. | Meta reports over **60%** inference-throughput improvement for an Andromeda advertising model on NVIDIA GPUs and over **25%** training-throughput improvement for an advertising model on MTIA. These are not Llama results. |
 | 2026-03-18 | [MiniMax — *M2.7: Early Echoes of Self-Evolution*](https://www.minimax.io/news/minimax-m27-en) | M2.7 participated in RL-team workflows and repeatedly improved its own agent framework, tools, skills, and memory from failed trajectories and evaluation feedback. | MiniMax reports coverage of **30–50%** of selected workflows; one autonomous framework experiment ran for over **100** rounds and improved an internal evaluation by **30%**. These are workflow and internal-evaluation results, not a general base-model gain. |
 | 2025-05-14 | [Google DeepMind — *AlphaEvolve*](https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/) | AlphaEvolve used Gemini to generate algorithm candidates that were automatically evaluated and evolved; applications included Google infrastructure and a matrix-multiplication kernel used in Gemini training. | DeepMind reports a **23%** speedup for that training kernel, corresponding to roughly **1%** lower overall Gemini-training time. The search-and-verification harness remains a fixed, externally designed system. |
 
-The companion catalog retains research prototypes and papers—such as [Darwin Gödel Machine](https://arxiv.org/abs/2505.22954) and [Hyperagents](https://arxiv.org/abs/2603.19461)—under their primary L1–L5 mechanism rather than presenting them here as deployed industrial practice. This separation preserves a useful distinction: current public evidence most strongly supports human-supervised, verifier-mediated loops around infrastructure, experiments, and agent workflows—not fully autonomous successor-model development.
+These cases range from benchmarked research systems to deployed infrastructure. Read each reported gain within the scope stated in its row; none establishes fully autonomous successor-model development.
 
 ## Table of Contents
 
@@ -114,6 +119,7 @@ The full catalog is designed for reference, but these short routes provide a fas
 | **Understand the field map** | Start with the [companion survey](https://arxiv.org/abs/2609.11873), then read the [improvement-loop anatomy](#rsi-improvement-loop-anatomy) and the [L1-L5 overview](#taxonomy-at-a-glance). |
 | **Study persistent agent improvement** | Read [Voyager](https://arxiv.org/abs/2305.16291) for reusable skills and automatic curricula, then browse [L3](#3-l3---autonomy-over-future-learning-experience) and [L4](#4-l4---autonomy-in-deployment-and-environmental-adaptation). |
 | **Study recursive meta-improvement** | Read [Darwin Gödel Machine](https://arxiv.org/abs/2505.22954) and [Gödel Agent](https://arxiv.org/abs/2410.04444), then browse [L5](#5-l5---from-environmental-adaptation-to-meta-improvement). |
+| **Compare agent self-improvement surveys** | Read this repository's [companion survey](https://arxiv.org/abs/2609.11873) alongside [*Self-Improvements in Modern Agentic Systems*](https://arxiv.org/abs/2607.13104), which organizes updates to model parameters and agent scaffolds. |
 
 <a id="companion-survey"></a>
 
@@ -129,7 +135,7 @@ The survey introduces the Headroom-Closed Index (HCI), develops the RSI roadmap 
 
 ## Scope and Relevance Decision <sub><a href="#readme-top">↑ top</a></sub>
 
-**The 491 baseline papers and 28 table-derived extensions in this collection are retained as RSI-related under the L1-L5 taxonomy.** The taxonomy intentionally includes bounded forms and precursors:
+**The 491 baseline papers, 28 table-derived extensions, and one independently screened addition in this collection are retained as RSI-related under the L1-L5 taxonomy.** The taxonomy intentionally includes bounded forms and precursors:
 
 - **L1 - Autonomy over Improvement Execution:** the system executes a human-defined improvement procedure, and its accepted results persist into later tasks or rounds.
 - **L2 - Autonomy over Improvement Strategies:** the system chooses how to improve a specified target, while the objective, evaluation criterion, or acceptance rule remains external.
@@ -183,7 +189,7 @@ Blue, purple, orange, green, and red encode L1 through L5. Target colors disting
 | Level | Papers | Interpretation |
 | --- | ---: | --- |
 | L1 | 219 | Autonomy over improvement execution. |
-| L2 | 159 | Autonomy over improvement strategies. |
+| L2 | 160 | Autonomy over improvement strategies. |
 | L3 | 65 | Autonomy over future learning experience. |
 | L4 | 45 | Autonomy in deployment and environmental adaptation. |
 | L5 | 31 | From environmental adaptation to meta-improvement. |
@@ -1334,7 +1340,7 @@ The following additions are explicitly discussed in Table 3 of the survey, which
 
 ## 2. L2 - Autonomy over Improvement Strategies <sub><a href="#readme-top">↑ top</a></sub>
 
-The system chooses how to improve a specified target, while the objective, evaluation criterion, or acceptance rule remains externally specified. **159 papers.**
+The system chooses how to improve a specified target, while the objective, evaluation criterion, or acceptance rule remains externally specified. **160 papers.**
 
 ### Featured representative papers
 
@@ -1349,7 +1355,7 @@ The system chooses how to improve a specified target, while the objective, evalu
 | [AFlow](https://arxiv.org/abs/2410.10762) | Searches code-represented agent workflows with execution feedback. |
 
 <details>
-<summary><strong>Browse the full L2 catalog (159 papers)</strong></summary>
+<summary><strong>Browse the full L2 catalog (160 papers)</strong></summary>
 
 ### Table-derived extensions
 
@@ -2150,6 +2156,13 @@ The following additions are explicitly listed in Table 4, which groups represent
    [[Paper](https://arxiv.org/abs/2605.28918)] · arXiv:2605.28918  
    ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--External_Artifact-4f46e5)  
    *Taxonomy:* L2. *Updated object(s):* 9.1 Program Code.
+
+### Independently screened addition (2026-09-24)
+
+1. **Language Agents as Optimizable Graphs (GPTSwarm)**<br>
+   [[Paper](https://arxiv.org/abs/2402.16823)] · arXiv:2402.16823<br>
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)<br>
+   *Editorial rationale:* Task feedback updates agent-graph connections and node prompts across optimization rounds; the task utility and optimization procedures remain externally specified. *Updated object(s):* 3.1 Workflow / Graph; 1.2 Task Prompt / Template.
 
 </details>
 
@@ -2980,13 +2993,14 @@ If you find this repository or its taxonomy useful, please cite the companion su
 
 ## Data Provenance and Validation <sub><a href="#readme-top">↑ top</a></sub>
 
-This document combines a 491-paper per-paper taxonomy dataset with 28 additional works selected from the survey's representative Tables 3-7 on 2026-09-11. The baseline dataset records a title, arXiv ID, primary level, boundary classification, detailed rationale, and updated-object code(s) for every paper. The extensions retain the table-derived rationale and are placed using the same target taxonomy. Neither source uniformly provides authors or venue metadata, so those fields are intentionally not inferred.
+This document combines a 491-paper per-paper taxonomy dataset with 28 additional works selected from the survey's representative Tables 3-7 on 2026-09-11, plus one independently screened paper added on 2026-09-24. The baseline dataset records a title, arXiv ID, primary level, boundary classification, detailed rationale, and updated-object code(s) for every paper. The 28 extensions retain the table-derived rationale; the later addition records its editorial rationale separately. Authors and venue metadata are not inferred for catalog entries.
 
-Automated integrity checks before generation:
+Catalog integrity checks:
 
 - **491 / 491** baseline rows have a title, arXiv ID, and valid primary level `L1` to `L5`; each of the **28** extensions has a stable arXiv identifier.
-- **0** duplicate arXiv IDs and **0** duplicate titles were found.
+- The independently screened [GPTSwarm paper](https://arxiv.org/abs/2402.16823) has a stable arXiv identifier and is classified as L2 because it retains feedback-driven changes to agent prompts and graph connectivity under an externally specified task utility.
+- **0** duplicate arXiv IDs and **0** duplicate titles were found across the 520 entries.
 - All IDs match the arXiv identifier pattern `YYMM.NNNNN` (or its four-digit predecessor form).
-- Source labels are preserved rather than inferred from keyword matching. Keyword-only screening would incorrectly omit lower-level but in-scope work such as automatic prompt search.
+- Baseline source labels are preserved rather than inferred from keyword matching. Keyword-only screening would incorrectly omit lower-level but in-scope work such as automatic prompt search.
 
-The per-paper taxonomy dataset remains the authoritative record for the source set. The 28 extensions were selected from the survey's chapter tables rather than from a bulk bibliography scan. Aggregate visualizations should not be used to reconstruct individual paper metadata.
+The per-paper taxonomy dataset remains the authoritative record for the 491-paper baseline. The 28 extensions came from the survey's chapter tables; GPTSwarm was reviewed against the same inclusion and classification criteria using its primary paper. Aggregate visualizations should not be used to reconstruct individual paper metadata.
