@@ -7,7 +7,7 @@
 <strong>A taxonomy-first, auditable map of recursive self-improvement research.</strong>
 
 <p>
-  <a href="#paper-catalog"><img alt="Papers" src="https://img.shields.io/badge/papers-520-2563eb?style=flat-square"></a>
+  <a href="#paper-catalog"><img alt="Papers" src="https://img.shields.io/badge/papers-521-2563eb?style=flat-square"></a>
   <a href="https://arxiv.org/abs/2609.11873"><img alt="Companion survey" src="https://img.shields.io/badge/Companion%20Survey-arXiv%3A2609.11873-b31b1b?style=flat-square&amp;logo=arxiv&amp;logoColor=white"></a>
   <a href="#taxonomy-at-a-glance"><img alt="Taxonomy" src="https://img.shields.io/badge/taxonomy-L1--L5-7c3aed?style=flat-square"></a>
 </p>
@@ -42,9 +42,9 @@ RSI is the capability of an intelligent system to transform acquired experience 
 
 ## Latest Updates <sub><a href="#readme-top">↑ top</a></sub>
 
-This section logs material updates to this repository, including new source-verified research, industry coverage, and curation. It is editorially separate from the 520-paper taxonomy, so a release, project page, or repository update is never presented as a peer-reviewed paper by default.
+This section logs material updates to this repository, including new source-verified research, industry coverage, and curation. It is editorially separate from the 521-paper taxonomy, so a release, project page, or repository update is never presented as a peer-reviewed paper by default.
 
-1. **2026-09-24 — Paper and industry coverage expanded:** Added [GPTSwarm](https://arxiv.org/abs/2402.16823) to the [L2 catalog](#2-l2---autonomy-over-improvement-strategies), added two [industry cases](#industry-practices), and linked a related agent-focused survey in [Reading Paths](#reading-paths) after checking their primary sources.
+1. **2026-09-24 — Paper and industry coverage expanded:** Added [GPTSwarm](https://arxiv.org/abs/2402.16823) to [L2](#2-l2---autonomy-over-improvement-strategies) and [Dream-RSI](https://arxiv.org/abs/2609.14858) to [L5](#5-l5---from-environmental-adaptation-to-meta-improvement), added two [industry cases](#industry-practices), and linked a related agent-focused survey in [Reading Paths](#reading-paths) after checking their primary sources.
    ![](https://img.shields.io/badge/-Repository-475569) ![](https://img.shields.io/badge/-Research-2563eb) ![](https://img.shields.io/badge/-Industry-0f766e)
 
 1. **2026-09-19 — Public Industry Practices added:** A new [source-verified timeline](#industry-practices) launched with **11** publicly disclosed cases in which AI systems contribute to AI R&D, training or inference infrastructure, or retained self-improvement loops. Each entry distinguishes the reported result from the limits of its RSI claim. [[Browse the timeline](#industry-practices)]
@@ -135,7 +135,7 @@ The survey introduces the Headroom-Closed Index (HCI), develops the RSI roadmap 
 
 ## Scope and Relevance Decision <sub><a href="#readme-top">↑ top</a></sub>
 
-**The 491 baseline papers, 28 table-derived extensions, and one independently screened addition in this collection are retained as RSI-related under the L1-L5 taxonomy.** The taxonomy intentionally includes bounded forms and precursors:
+**The 491 baseline papers, 28 table-derived extensions, and two independently screened additions in this collection are retained as RSI-related under the L1-L5 taxonomy.** The taxonomy intentionally includes bounded forms and precursors:
 
 - **L1 - Autonomy over Improvement Execution:** the system executes a human-defined improvement procedure, and its accepted results persist into later tasks or rounds.
 - **L2 - Autonomy over Improvement Strategies:** the system chooses how to improve a specified target, while the objective, evaluation criterion, or acceptance rule remains external.
@@ -192,7 +192,7 @@ Blue, purple, orange, green, and red encode L1 through L5. Target colors disting
 | L2 | 160 | Autonomy over improvement strategies. |
 | L3 | 65 | Autonomy over future learning experience. |
 | L4 | 45 | Autonomy in deployment and environmental adaptation. |
-| L5 | 31 | From environmental adaptation to meta-improvement. |
+| L5 | 32 | From environmental adaptation to meta-improvement. |
 
 Each level begins with a small set of **featured representative papers**, selected to cover its defining mechanisms and important research landmarks. They are entry points for reading, not quality rankings; the complete catalog remains available in the expandable section below each level.
 
@@ -2774,7 +2774,7 @@ The following additions are explicitly discussed in Table 6 under trajectory dis
 
 ## 5. L5 - From Environmental Adaptation to Meta-Improvement <sub><a href="#readme-top">↑ top</a></sub>
 
-The system improves the mechanism that produces future improvements, including search, evaluation, and research-control policies. **31 papers.**
+The system improves the mechanism that produces future improvements, including search, evaluation, and research-control policies. **32 papers.**
 
 <div align="center">
   <img src="./assets/rsi-l4-l5-meta-improvement.png" width="100%" alt="Comparison of L4 environmental adaptation and L5 recursive meta-improvement. L5 revises and validates the improvement process inherited by successor systems under external human mission, safety, evaluation, and acceptance constraints.">
@@ -2789,12 +2789,13 @@ The system improves the mechanism that produces future improvements, including s
 | [Self-Taught Optimizer](https://arxiv.org/abs/2310.02304) | Recursively improves the code-generation procedure that drives later search rounds. |
 | [Gödel Agent](https://arxiv.org/abs/2410.04444) | Provides a self-referential agent framework that can revise its own improvement routines. |
 | [Darwin Gödel Machine](https://arxiv.org/abs/2505.22954) | Evolves coding agents through evaluated code modifications and inherited successful descendants. |
+| [Dream-RSI](https://arxiv.org/abs/2609.14858) | Replays past discovery trees to select revised exploration policies for later online search. |
 | [AIRA2](https://arxiv.org/abs/2603.26499) | Targets AI-research-agent bottlenecks through asynchronous experimentation, hidden-consistent evaluation, and interactive ReAct operators. |
 | [MOSS](https://arxiv.org/abs/2605.22794) | Evolves autonomous agents by rewriting source-level system components. |
 | [The Red Queen Gödel Machine](https://arxiv.org/abs/2606.26294) | Co-evolves agents and evaluators, making the improvement criterion part of the meta-level loop. |
 
 <details>
-<summary><strong>Browse the full L5 catalog (31 papers)</strong></summary>
+<summary><strong>Browse the full L5 catalog (32 papers)</strong></summary>
 
 ### Table-derived extensions
 
@@ -2956,6 +2957,13 @@ The following additions are explicitly listed in Table 7 as L5 mechanisms with i
    ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Evaluator_&_Feedback-a21caf)  
    *Taxonomy:* L5. *Updated object(s):* 7.1 Judge; 4.4 Skill Library.
 
+### Independently screened addition (2026-09-24)
+
+1. **Dream-RSI: Recursive Self-Improvement through Evolving Worlds**<br>
+   [[Paper](https://arxiv.org/abs/2609.14858)] · [[Project](https://www.dream-rsi.com/)] · arXiv:2609.14858<br>
+   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Trainer_Optimization-c2410c)<br>
+   *Editorial rationale:* A policy-development agent revises exploration-policy code using feedback from replayed discovery trees; the selected policy guides the next online search and generates new history for later rounds. The coding agent, model weights, evaluator, and task objective remain fixed. *Updated object(s):* 6.5 Search / Meta-optimization Procedure; 2.1 Experience Memory.
+
 </details>
 
 <a id="contributing"></a>
@@ -2993,14 +3001,15 @@ If you find this repository or its taxonomy useful, please cite the companion su
 
 ## Data Provenance and Validation <sub><a href="#readme-top">↑ top</a></sub>
 
-This document combines a 491-paper per-paper taxonomy dataset with 28 additional works selected from the survey's representative Tables 3-7 on 2026-09-11, plus one independently screened paper added on 2026-09-24. The baseline dataset records a title, arXiv ID, primary level, boundary classification, detailed rationale, and updated-object code(s) for every paper. The 28 extensions retain the table-derived rationale; the later addition records its editorial rationale separately. Authors and venue metadata are not inferred for catalog entries.
+This document combines a 491-paper per-paper taxonomy dataset with 28 additional works selected from the survey's representative Tables 3-7 on 2026-09-11, plus two independently screened papers added on 2026-09-24. The baseline dataset records a title, arXiv ID, primary level, boundary classification, detailed rationale, and updated-object code(s) for every paper. The 28 extensions retain the table-derived rationale; the later additions record their editorial rationales separately. Authors and venue metadata are not inferred for catalog entries.
 
 Catalog integrity checks:
 
 - **491 / 491** baseline rows have a title, arXiv ID, and valid primary level `L1` to `L5`; each of the **28** extensions has a stable arXiv identifier.
 - The independently screened [GPTSwarm paper](https://arxiv.org/abs/2402.16823) has a stable arXiv identifier and is classified as L2 because it retains feedback-driven changes to agent prompts and graph connectivity under an externally specified task utility.
-- **0** duplicate arXiv IDs and **0** duplicate titles were found across the 520 entries.
+- The independently screened [Dream-RSI paper](https://arxiv.org/abs/2609.14858) has a stable arXiv identifier and is classified as L5 because it updates the exploration policy used to generate later improvements while keeping the coding agent and evaluator fixed.
+- **0** duplicate arXiv IDs and **0** duplicate titles were found across the 521 entries.
 - All IDs match the arXiv identifier pattern `YYMM.NNNNN` (or its four-digit predecessor form).
 - Baseline source labels are preserved rather than inferred from keyword matching. Keyword-only screening would incorrectly omit lower-level but in-scope work such as automatic prompt search.
 
-The per-paper taxonomy dataset remains the authoritative record for the 491-paper baseline. The 28 extensions came from the survey's chapter tables; GPTSwarm was reviewed against the same inclusion and classification criteria using its primary paper. Aggregate visualizations should not be used to reconstruct individual paper metadata.
+The per-paper taxonomy dataset remains the authoritative record for the 491-paper baseline. The 28 extensions came from the survey's chapter tables; GPTSwarm and Dream-RSI were reviewed against the same inclusion and classification criteria using their primary papers. Aggregate visualizations should not be used to reconstruct individual paper metadata.
