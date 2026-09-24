@@ -7,7 +7,7 @@
 <strong>A taxonomy-first, auditable map of recursive self-improvement research.</strong>
 
 <p>
-  <a href="#paper-catalog"><img alt="Papers" src="https://img.shields.io/badge/papers-521-2563eb?style=flat-square"></a>
+  <a href="#paper-catalog"><img alt="Papers" src="https://img.shields.io/badge/papers-522-2563eb?style=flat-square"></a>
   <a href="https://arxiv.org/abs/2609.11873"><img alt="Companion survey" src="https://img.shields.io/badge/Companion%20Survey-arXiv%3A2609.11873-b31b1b?style=flat-square&amp;logo=arxiv&amp;logoColor=white"></a>
   <a href="#taxonomy-at-a-glance"><img alt="Taxonomy" src="https://img.shields.io/badge/taxonomy-L1--L5-7c3aed?style=flat-square"></a>
 </p>
@@ -42,7 +42,10 @@ RSI is the capability of an intelligent system to transform acquired experience 
 
 ## Latest Updates <sub><a href="#readme-top">↑ top</a></sub>
 
-This section logs material updates to this repository, including new source-verified research, industry coverage, and curation. It is editorially separate from the 521-paper taxonomy, so a release, project page, or repository update is never presented as a peer-reviewed paper by default.
+This section logs material updates to this repository, including new source-verified research, industry coverage, and curation. It is editorially separate from the 522-paper taxonomy, so a release, project page, or repository update is never presented as a peer-reviewed paper by default.
+
+1. **2026-09-25 — Recent RSI sources reviewed:** Added [AIDE²](https://arxiv.org/abs/2609.26457) to [L5](#5-l5---from-environmental-adaptation-to-meta-improvement), added Meta's [Organizational Second Brain](https://engineering.fb.com/2026/09/02/ml-applications/organizational-second-brain-ai-learns-from-experts/) to [Public Industry Practices](#industry-practices), and reconciled six catalog titles with their current arXiv records.
+   ![](https://img.shields.io/badge/-Repository-475569) ![](https://img.shields.io/badge/-Research-2563eb) ![](https://img.shields.io/badge/-Industry-0f766e)
 
 1. **2026-09-24 — Paper and industry coverage expanded:** Added [GPTSwarm](https://arxiv.org/abs/2402.16823) to [L2](#2-l2---autonomy-over-improvement-strategies) and [Dream-RSI](https://arxiv.org/abs/2609.14858) to [L5](#5-l5---from-environmental-adaptation-to-meta-improvement), added two [industry cases](#industry-practices), and linked a related agent-focused survey in [Reading Paths](#reading-paths) after checking their primary sources.
    ![](https://img.shields.io/badge/-Repository-475569) ![](https://img.shields.io/badge/-Research-2563eb) ![](https://img.shields.io/badge/-Industry-0f766e)
@@ -57,7 +60,7 @@ This section logs material updates to this repository, including new source-veri
 <summary><strong>Update policy</strong></summary>
 
 - Include a repository update only when it adds or materially revises source-verified coverage; sources remain limited to primary research, official organization posts, technical reports, release notes, or maintained project pages.
-- Tag source items as `Research` or `Industry` and state their material type (`Paper`, `Survey`, `Technical Report`, `Official Blog`, `Release`, or `Project`); tag repository-maintenance entries as `Repository` and state the affected coverage. State the update date and a neutral, one-sentence explanation of RSI relevance.
+- Tag repository updates as `Repository` and use `Research`, `Industry`, or `Curation` to indicate the affected coverage. When highlighting a single source, state its material type (`Paper`, `Survey`, `Technical Report`, `Official Blog`, `Release`, or `Project`). State the update date and give a neutral explanation of its RSI relevance.
 - Link research to an official proceedings page, DOI, or arXiv record; link industry items to the organization's original publication, never to a repost or social-media summary; link repository updates to the affected section.
 - An update is not automatically an in-scope taxonomy paper. It enters the L1-L5 catalog only after the same paper-level relevance review.
 
@@ -73,16 +76,17 @@ Entries are ordered by publication date (newest first). “Boundary” names the
 
 | Date | Organization / primary source | Publicly disclosed practice | Reported result and boundary |
 | --- | --- | --- | --- |
-| 2026-09-17 | [Z.ai — *How GLM Built Its Own Inference Infrastructure*](https://z.ai/blog/glm-built-its-inference-infrastructure) | GLM-5.3 proposed and validated optimizations for the production inference infrastructure serving GLM-5.3-Flash, using correctness checks, execution traces, microbenchmarks, and end-to-end measurements. | Production-ready in under two weeks; end-to-end throughput reached about **3×** the initial version. This improves serving infrastructure, not GLM's own weights. |
+| 2026-09-17 | [Z.ai — *Toward Recursive Self-Improvement: How GLM Built Its Own Inference Infrastructure*](https://z.ai/blog/glm-built-its-inference-infrastructure) | GLM-5.3 proposed and validated optimizations for the production inference infrastructure serving GLM-5.3-Flash, using correctness checks, execution traces, microbenchmarks, and end-to-end measurements. | Production-ready in under two weeks; end-to-end throughput reached about **3×** the initial version. This improves serving infrastructure, not GLM's own weights. |
 | 2026-09-17 | [Anthropic — *Measurements for Understanding the Pace of AI Development Inside Frontier Labs*](https://www.anthropic.com/institute/measuring-pace-of-ai-development) | Anthropic measured Claude's participation across its internal AI-development work. | As of August 2026, Claude was reported to lead about **26%** of measured AI-R&D work and to collaborate on over **90%**; no measured task category was fully autonomous. |
 | 2026-09-06 | [OpenAI — *Research Acceleration: The View Inside OpenAI*](https://openai.com/index/research-acceleration-view-inside-openai/) | OpenAI researchers used coding agents for research code, experiment support, and infrastructure troubleshooting; the organization measured their use across the AI R&D workflow. | By mid-August, agent runtime amounted to **3.1 eight-hour agent-days per human workday** across the research organization. This measures activity, not research productivity; over half of successful tasks estimated at 4–8 human hours still involved human intervention. |
+| 2026-09-02 | [Meta — *An Organizational Second Brain*](https://engineering.fb.com/2026/09/02/ml-applications/organizational-second-brain-ai-learns-from-experts/) | Meta describes an agent that turns expert corrections into diagnosed edits to its knowledge files and reasoning recipes, validates them with replay and regression tests, and adds the triggering cases to its regression suite after experts approve and land the edits. | Meta reports validated knowledge edits with zero regressions across improvement cycles. Experts approve changes before they land; the roughly **80%** reduction in tokens per turn followed a separate restructuring into targeted recipes, not a measured gain from each improvement cycle. This does not retrain the model. |
 | 2026-08-28 | [Tencent Hunyuan — *Tencent Releases and Open-Sources Tencent Hy4 Preview*](https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/) | Hy4 preview participated in its own R&D, including training methods, data strategy, evaluation, and low-level operator optimization; it also iterated on inference-system bottlenecks using experimental feedback. | Tencent reports **31.8%** end-to-end inference-throughput improvement. The objectives and acceptance process remain externally defined. |
 | 2026-07-29 | [OpenAI — *How GPT-5.6 Fuses Frontier Intelligence with Frontier Efficiency*](https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/) | GPT-5.6 Sol analyzed production workloads, tested routing and forward-pass changes, rewrote production Triton/Gluon operators, and ran architecture experiments for speculative-decoding models. | OpenAI reports **20%** lower end-to-end serving cost and over **15%** token-generation efficiency improvement for speculative decoding. Neither figure means the base model retrained itself. |
 | 2026-07-16 | [Moonshot AI — *Kimi K3: Open Frontier Intelligence*](https://www.kimi.com/en/blog/kimi-k3) | Early K3 versions performed most of the team's operator-optimization work late in K3 development, including attention-kernel work and a MiniTriton compiler demonstration. | This is model-assisted development of the software stack; the post does not establish a corresponding whole-training speedup or autonomous model development. |
 | 2026-06-23 | [ByteDance Seed — *Seed2.1 Officially Released: Advancing AI Productivity*](https://seed.bytedance.com/en/blog/seed2-1-officially-released-advancing-ai-productivity) | Through “Seed for Seed,” Seed2.1 entered internal model R&D for evaluation, diagnosis, SFT data, RL-framework optimization, paper reproduction, and experiment validation, with multi-round use of intermediate artifacts and feedback. | Some tasks reportedly run for hours to tens of days. The post does not quantify an independent contribution to the final model or claim end-to-end autonomy. |
 | 2026-06-11 | [Recursive — *First Steps Toward Automated AI Research*](https://www.recursive.com/articles/first-steps-toward-automated-ai-research) | An automated research system proposed changes, implemented them, ran and validated experiments, and reused context from earlier runs across small-model training and GPU-kernel benchmarks. | Recursive reports **0.9109** validation BPB on NanoChat Autoresearch versus **0.9372** for its comparison baseline. These are bounded benchmark results, not evidence that a frontier training pipeline is autonomously improving itself. |
 | 2026-06 | [Anthropic — *When AI Builds Itself*](https://www.anthropic.com/institute/recursive-self-improvement) | Claude investigated training-cluster failures, modified training code, ran experiments, and reviewed code in Anthropic's development workflow. | Anthropic reports that over **80%** of merged code was attributable to Claude as of May 2026. Controlled training-code experiments should not be read as whole-frontier-training speedups. |
-| 2026-05 | [OpenBMB — *ForgeTrain: An LLM Pretraining Framework Built End-to-End by an Autonomous Agent Loop*](https://github.com/OpenBMB/ForgeTrain) | An autonomous coding-agent loop wrote, debugged, and optimized an LLM pretraining framework end-to-end, repeatedly launching training jobs, parsing logs, diagnosing failures, patching code, and passing validation gates. The resulting framework completed MiniCPM4-0.5B pretraining and produced usable model weights. | OpenBMB reports **44.13% MFU** on 64×H100, about **10% above** its Megatron-LM baseline. The coding agent was external to MiniCPM; the harness, gates, objectives, and reference stack remained externally designed. |
+| 2026-05 | [OpenBMB — *ForgeTrain: An LLM Pretraining Framework Built End-to-End by an Autonomous Agent Loop*](https://github.com/OpenBMB/ForgeTrain) | An autonomous coding-agent loop wrote, debugged, and optimized an LLM pretraining framework end-to-end, repeatedly launching training jobs, parsing logs, diagnosing failures, patching code, and passing validation gates. The resulting framework completed MiniCPM4-0.5B pretraining and produced usable model weights. | OpenBMB reports **44.13% MFU** on 64×H100, about **10% above** its Megatron-LM baseline. The coding agent was external to MiniCPM; the matching agent harness is marked as forthcoming rather than included in the public release. |
 | 2026-04-02 | [Meta — *KernelEvolve*](https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/) | Meta's Ranking Engineer Agent autonomously designed, executed, and analyzed model experiments; KernelEvolve retained a search tree while iterating through code generation, compilation, correctness checks, and performance tests for kernels. | Meta reports over **60%** inference-throughput improvement for an Andromeda advertising model on NVIDIA GPUs and over **25%** training-throughput improvement for an advertising model on MTIA. These are not Llama results. |
 | 2026-03-18 | [MiniMax — *M2.7: Early Echoes of Self-Evolution*](https://www.minimax.io/news/minimax-m27-en) | M2.7 participated in RL-team workflows and repeatedly improved its own agent framework, tools, skills, and memory from failed trajectories and evaluation feedback. | MiniMax reports coverage of **30–50%** of selected workflows; one autonomous framework experiment ran for over **100** rounds and improved an internal evaluation by **30%**. These are workflow and internal-evaluation results, not a general base-model gain. |
 | 2025-05-14 | [Google DeepMind — *AlphaEvolve*](https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/) | AlphaEvolve used Gemini to generate algorithm candidates that were automatically evaluated and evolved; applications included Google infrastructure and a matrix-multiplication kernel used in Gemini training. | DeepMind reports a **23%** speedup for that training kernel, corresponding to roughly **1%** lower overall Gemini-training time. The search-and-verification harness remains a fixed, externally designed system. |
@@ -135,7 +139,7 @@ The survey introduces the Headroom-Closed Index (HCI), develops the RSI roadmap 
 
 ## Scope and Relevance Decision <sub><a href="#readme-top">↑ top</a></sub>
 
-**The 491 baseline papers, 28 table-derived extensions, and two independently screened additions in this collection are retained as RSI-related under the L1-L5 taxonomy.** The taxonomy intentionally includes bounded forms and precursors:
+**The 491 baseline papers, 28 table-derived extensions, and three independently screened additions in this collection are retained as RSI-related under the L1-L5 taxonomy.** The taxonomy intentionally includes bounded forms and precursors:
 
 - **L1 - Autonomy over Improvement Execution:** the system executes a human-defined improvement procedure, and its accepted results persist into later tasks or rounds.
 - **L2 - Autonomy over Improvement Strategies:** the system chooses how to improve a specified target, while the objective, evaluation criterion, or acceptance rule remains external.
@@ -192,7 +196,7 @@ Blue, purple, orange, green, and red encode L1 through L5. Target colors disting
 | L2 | 160 | Autonomy over improvement strategies. |
 | L3 | 65 | Autonomy over future learning experience. |
 | L4 | 45 | Autonomy in deployment and environmental adaptation. |
-| L5 | 32 | From environmental adaptation to meta-improvement. |
+| L5 | 33 | From environmental adaptation to meta-improvement. |
 
 Each level begins with a small set of **featured representative papers**, selected to cover its defining mechanisms and important research landmarks. They are entry points for reading, not quality rankings; the complete catalog remains available in the expandable section below each level.
 
@@ -240,22 +244,22 @@ The following additions are explicitly discussed in Table 3 of the survey, which
 
 1. **Phi-4-reasoning Technical Report**  
    [[Paper](https://arxiv.org/abs/2504.21318)] · arXiv:2504.21318  
-   ![](https://img.shields.io/badge/-Level--L1-2563eb) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Data_Environment-ca8a04)  
+   ![](https://img.shields.io/badge/-Level--L1-2563eb) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Data_&_Environment-ca8a04)  
    *Survey-table rationale:* Training-data selection through LLM evaluation and boundary filtering; selection criteria remain human-defined. *Updated object(s):* 8.1 Training / Experience Data.
 
 1. **NVIDIA Nemotron-4 340B Technical Report**  
    [[Paper](https://arxiv.org/abs/2406.11704)] · arXiv:2406.11704  
-   ![](https://img.shields.io/badge/-Level--L1-2563eb) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Data_Environment-ca8a04)  
+   ![](https://img.shields.io/badge/-Level--L1-2563eb) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Data_&_Environment-ca8a04)  
    *Survey-table rationale:* Synthetic supervision is generated and reward-filtered under human-defined quality dimensions. *Updated object(s):* 8.1 Training / Experience Data.
 
 1. **EDIT: Evidence-Diagnosed Intervention Training for Rule-Faithful LLM Grading**  
    [[Paper](https://arxiv.org/abs/2606.06350)] · arXiv:2606.06350  
-   ![](https://img.shields.io/badge/-Level--L1-2563eb) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Trainer_Optimization-c2410c)  
+   ![](https://img.shields.io/badge/-Level--L1-2563eb) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Trainer_%2F_Optimization-c2410c)  
    *Survey-table rationale:* Diagnosed-step revisions refine a training signal while diagnostic criteria remain human-defined. *Updated object(s):* 6.1 Training Objective.
 
 1. **AIPC: Agent-Based Automation for AI Model Deployment with Qualcomm AI Runtime**  
    [[Paper](https://arxiv.org/abs/2604.14661)] · arXiv:2604.14661  
-   ![](https://img.shields.io/badge/-Level--L1-2563eb) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L1-2563eb) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Survey-table rationale:* Skill-guided deployment adaptation follows a human-defined deployment procedure. *Updated object(s):* 3.6 Harness Implementation / Scaffold Code.
 
 
@@ -511,7 +515,7 @@ The following additions are explicitly discussed in Table 3 of the survey, which
 
 1. **Differentiable Mixture-of-Agents Incentivizes Swarm Intelligence of Large Language Models**  
    [[Paper](https://arxiv.org/abs/2605.15706)] · arXiv:2605.15706  
-   ![](https://img.shields.io/badge/-Level--L1-2563eb) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L1-2563eb) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L1. *Updated object(s):* 3.3 Harness / Workflow; 5.2 Adapter.
 
 1. **Distilling LLM Feedback for Lean Theorem Proving**  
@@ -704,7 +708,7 @@ The following additions are explicitly discussed in Table 3 of the survey, which
    ![](https://img.shields.io/badge/-Level--L1-2563eb) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--External_Artifact-4f46e5)  
    *Taxonomy:* L1. *Updated object(s):* 9.1 Program Code; 2.2 Knowledge Memory.
 
-1. **Latent Preference Modeling for Cross-Session Personalized Tool Calling**  
+1. **Latent Preference Modeling for Multi-Session Personalized Tool Calling**  
    [[Paper](https://arxiv.org/abs/2604.17886)] · arXiv:2604.17886  
    ![](https://img.shields.io/badge/-Level--L1-2563eb) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Memory_&_Knowledge-059669)  
    *Taxonomy:* L1. *Updated object(s):* 2.2 Knowledge Memory.
@@ -861,7 +865,7 @@ The following additions are explicitly discussed in Table 3 of the survey, which
 
 1. **Policy-Guided Stepwise Model Routing for Cost-Effective Reasoning**  
    [[Paper](https://arxiv.org/abs/2605.06116)] · arXiv:2605.06116  
-   ![](https://img.shields.io/badge/-Level--L1-2563eb) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L1-2563eb) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L1. *Updated object(s):* 3.3 Harness / Workflow.
 
 1. **Post-Training Probability Manifold Correction via Structured SVD Pruning and Self-Referential Distillation**  
@@ -1049,11 +1053,6 @@ The following additions are explicitly discussed in Table 3 of the survey, which
    ![](https://img.shields.io/badge/-Level--L1-2563eb) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Model-1d4ed8)  
    *Taxonomy:* L1. *Updated object(s):* 5.1 Model Weights.
 
-1. **Self-Adapting Improvement Loops for Robotic Learning**  
-   [[Paper](https://arxiv.org/abs/2506.06658)] · arXiv:2506.06658  
-   ![](https://img.shields.io/badge/-Level--L1-2563eb) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Model-1d4ed8)  
-   *Taxonomy:* L1. *Updated object(s):* 5.1 Model Weights.
-
 1. **Self-Alignment with Instruction Backtranslation**  
    [[Paper](https://arxiv.org/abs/2308.06259)] · arXiv:2308.06259  
    ![](https://img.shields.io/badge/-Level--L1-2563eb) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Model-1d4ed8)  
@@ -1081,6 +1080,11 @@ The following additions are explicitly discussed in Table 3 of the survey, which
 
 1. **Self-Improving Embodied Foundation Models**  
    [[Paper](https://arxiv.org/abs/2509.15155)] · arXiv:2509.15155  
+   ![](https://img.shields.io/badge/-Level--L1-2563eb) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Model-1d4ed8)  
+   *Taxonomy:* L1. *Updated object(s):* 5.1 Model Weights.
+
+1. **Self-Improving Loops for Visual Robotic Planning**  
+   [[Paper](https://arxiv.org/abs/2506.06658)] · arXiv:2506.06658  
    ![](https://img.shields.io/badge/-Level--L1-2563eb) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Model-1d4ed8)  
    *Taxonomy:* L1. *Updated object(s):* 5.1 Model Weights.
 
@@ -1319,7 +1323,7 @@ The following additions are explicitly discussed in Table 3 of the survey, which
    ![](https://img.shields.io/badge/-Level--L1-2563eb) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Model-1d4ed8)  
    *Taxonomy:* L1. *Updated object(s):* 5.1 Model Weights.
 
-1. **When Good Verifiers Go Bad: Self-Improving VLMs Can Regress on New Tasks**  
+1. **When Good Verifiers Go Bad: Silent Negative Transfer in Verifier-Guided VLM Training**  
    [[Paper](https://arxiv.org/abs/2606.14629)] · arXiv:2606.14629  
    ![](https://img.shields.io/badge/-Level--L1-2563eb) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Model-1d4ed8)  
    *Taxonomy:* L1. *Updated object(s):* 5.2 Adapter.
@@ -1363,7 +1367,7 @@ The following additions are explicitly listed in Table 4, which groups represent
 
 1. **Multimodal Prompt Optimization: Why Not Leverage Multiple Modalities for MLLMs**  
    [[Paper](https://arxiv.org/abs/2510.09201)] · arXiv:2510.09201  
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Prompt_Context-7c3aed)  
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Prompt_&_Context-7c3aed)  
    *Survey-table rationale:* Evaluation-derived semantic feedback guides multimodal prompt candidates under a fixed task metric. *Updated object(s):* 1.1 Instruction; 1.2 Task Prompt / Template.
 
 1. **Agentic Neural Architecture Search**  
@@ -1373,7 +1377,7 @@ The following additions are explicitly listed in Table 4, which groups represent
 
 1. **Auto Research with Specialist Agents Develops Effective and Non-Trivial Training Recipes**  
    [[Paper](https://arxiv.org/abs/2605.05724)] · arXiv:2605.05724  
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Trainer_Optimization-c2410c)  
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Trainer_%2F_Optimization-c2410c)  
    *Survey-table rationale:* Specialist agents search over training recipes with a shared lineage under an external evaluator. *Updated object(s):* 6.5 Search / Meta-optimization Procedure.
 
 1. **AutoKernel: Autonomous GPU Kernel Optimization via Iterative Agent-Driven Search**  
@@ -1404,7 +1408,7 @@ The following additions are explicitly listed in Table 4, which groups represent
 
 1. **A Self-Improving Coding Agent**  
    [[Paper](https://arxiv.org/abs/2504.15228)] · arXiv:2504.15228  
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L2. *Updated object(s):* 3.6 Scaffold Code; 4.3 Tool Code; 1.1 Instruction.
 
 1. **Adaptive Self-improvement LLM Agentic System for ML Library Development**  
@@ -1419,7 +1423,7 @@ The following additions are explicitly listed in Table 4, which groups represent
 
 1. **AFlow: Automating Agentic Workflow Generation**  
    [[Paper](https://arxiv.org/abs/2410.10762)] · arXiv:2410.10762  
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L2. *Updated object(s):* 3.6 Scaffold Code; 1.2 Task Prompt.
 
 1. **AgentDisCo: Towards Disentanglement and Collaboration in Open-ended Deep Research Agents**  
@@ -1439,7 +1443,7 @@ The following additions are explicitly listed in Table 4, which groups represent
 
 1. **Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses**  
    [[Paper](https://arxiv.org/abs/2604.25850)] · arXiv:2604.25850  
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L2. *Updated object(s):* 3.6 Scaffold Code; 4.3 Tool Code.
 
 1. **Agentic MIP Research: Accelerated Constraint Handler Generation**  
@@ -1447,9 +1451,9 @@ The following additions are explicitly listed in Table 4, which groups represent
    ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--External_Artifact-4f46e5)  
    *Taxonomy:* L2. *Updated object(s):* 9.1 Program Code; 9.2 Algorithm.
 
-1. **AgenticRL: Self-Refining Agentic Reinforcement Learning for Vision-Conditioned UAV Navigation**  
+1. **AgenticRL: Agentic Reinforcement Learning with Self-Refinement for Complex UAV Navigation**  
    [[Paper](https://arxiv.org/abs/2606.03963)] · arXiv:2606.03963  
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Trainer___Optimization-c2410c)  
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Trainer_%2F_Optimization-c2410c)  
    *Taxonomy:* L2. *Updated object(s):* 6.1 Objective; 5.1 Model Weights.
 
 1. **Ask, Don't Judge: Binary Questions for Interpretable LLM Evaluation and Self-Improvement**  
@@ -1469,7 +1473,7 @@ The following additions are explicitly listed in Table 4, which groups represent
 
 1. **Automated Design of Agentic Systems (ADAS)**  
    [[Paper](https://arxiv.org/abs/2408.08435)] · arXiv:2408.08435  
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L2. *Updated object(s):* 3.6 Scaffold Code.
 
 1. **Automated Heuristic Design for Unit Commitment Using Large Language Models**  
@@ -1534,7 +1538,7 @@ The following additions are explicitly listed in Table 4, which groups represent
 
 1. **Co-evolving Agent Architectures and Interpretable Reasoning for Automated Optimization**  
    [[Paper](https://arxiv.org/abs/2604.17708)] · arXiv:2604.17708  
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L2. *Updated object(s):* 3.1 Workflow; 2.2 Knowledge Memory.
 
 1. **CodeEvolve: an open source evolutionary coding agent for algorithmic discovery and optimization**  
@@ -1564,7 +1568,7 @@ The following additions are explicitly listed in Table 4, which groups represent
 
 1. **Continually self-improving AI**  
    [[Paper](https://arxiv.org/abs/2603.18073)] · arXiv:2603.18073  
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Trainer___Optimization-c2410c)  
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Trainer_%2F_Optimization-c2410c)  
    *Taxonomy:* L2. *Updated object(s):* 6.5 Meta-optimization; 6.1 Objective; 5.1 Model Weights.
 
 1. **CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery**  
@@ -1624,7 +1628,7 @@ The following additions are explicitly listed in Table 4, which groups represent
 
 1. **Enhancing Operational Safety via Agentic Dialogue Hazard Identification Analysis**  
    [[Paper](https://arxiv.org/abs/2606.03812)] · arXiv:2606.03812  
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L2. *Updated object(s):* 3.5 Multi-agent; 1.1 Instruction.
 
 1. **Environment-Grounded Automated Prompt Optimization for LLM Game Agents**  
@@ -1719,7 +1723,7 @@ The following additions are explicitly listed in Table 4, which groups represent
 
 1. **Feedback Over Form: Why Execution Feedback Matters More Than Pipeline Topology in 1-3B Code Generation**  
    [[Paper](https://arxiv.org/abs/2604.21950)] · arXiv:2604.21950  
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L2. *Updated object(s):* 3.1 Workflow.
 
 1. **Feedback-to-Rubrics: Can We Learn Expert Criteria from Inline Comments?**  
@@ -1729,12 +1733,12 @@ The following additions are explicitly listed in Table 4, which groups represent
 
 1. **From AI Assistant to AI Scientist: Autonomous Discovery of LLM-RL Algorithms with LLM Agents**  
    [[Paper](https://arxiv.org/abs/2603.23951)] · arXiv:2603.23951  
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Trainer___Optimization-c2410c)  
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Trainer_%2F_Optimization-c2410c)  
    *Taxonomy:* L2. *Updated object(s):* 6.1 Objective; 6.2 Trainer / Optimization.
 
 1. **From Failed Trajectories to Reliable LLM Agents: Diagnosing and Repairing Harness Flaws**  
    [[Paper](https://arxiv.org/abs/2606.06324)] · arXiv:2606.06324  
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L2. *Updated object(s):* 3.6 Scaffold Code; 1.2 Task Prompt; 4.2 Tool Interface.
 
 1. **From Self-Evolving Synthetic Data to Verifiable-Reward RL: Post-Training Multi-turn Interactive Tool-Using Agents**  
@@ -1839,12 +1843,12 @@ The following additions are explicitly listed in Table 4, which groups represent
 
 1. **Learning from Failure: Inference-Time Self-Improvement for Computer-Use Agents**  
    [[Paper](https://arxiv.org/abs/2606.31270)] · arXiv:2606.31270  
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L2. *Updated object(s):* 3.6 Scaffold Code; 4.1 Tool Set; 3.4 Harness / Workflow.
 
 1. **Learning to Choose: An Empowerment-Guided Multi-Agent System with semantic communication for Adaptive Method Selection**  
    [[Paper](https://arxiv.org/abs/2605.30042)] · arXiv:2605.30042  
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L2. *Updated object(s):* 3.3 Harness / Workflow; 2.1 Experience Memory.
 
 1. **LEVI: Stronger Search Architectures Can Substitute for Larger LLMs in Evolutionary Search**  
@@ -1914,7 +1918,7 @@ The following additions are explicitly listed in Table 4, which groups represent
 
 1. **Meta-Harness: End-to-End Optimization of Model Harnesses**  
    [[Paper](https://arxiv.org/abs/2603.28052)] · arXiv:2603.28052  
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L2. *Updated object(s):* 3.6 Scaffold Code.
 
 1. **Middo: Model-Informed Dynamic Data Optimization for Enhanced LLM Fine-Tuning via Closed-Loop Learning**  
@@ -1959,7 +1963,7 @@ The following additions are explicitly listed in Table 4, which groups represent
 
 1. **Polaris: A Gödel Agent Framework for Small Language Models through Experience-Abstracted Policy Repair**  
    [[Paper](https://arxiv.org/abs/2603.23129)] · arXiv:2603.23129  
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L2. *Updated object(s):* 3.6 Scaffold Code; 2.3 Procedural Memory.
 
 1. **ProfiLLM: Utility-Aligned Agentic User Profiling for Industrial Ride-Hailing Dispatch**  
@@ -2004,7 +2008,7 @@ The following additions are explicitly listed in Table 4, which groups represent
 
 1. **Recursive Harness Self-Improvement**  
    [[Paper](https://arxiv.org/abs/2607.15524)] · arXiv:2607.15524  
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L2. *Updated object(s):* 3.1 Workflow; 3.5 Multi-agent.
 
 1. **Reflection-Based Task Adaptation for Self-Improving VLA**  
@@ -2049,7 +2053,7 @@ The following additions are explicitly listed in Table 4, which groups represent
 
 1. **Self-Harness: Harnesses That Improve Themselves**  
    [[Paper](https://arxiv.org/abs/2606.09498)] · arXiv:2606.09498  
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L2. *Updated object(s):* 3.6 Scaffold Code; 1.1 Instruction.
 
 1. **Self-Improvement Can Self-Regress: The Rise-and-Collapse Failure Mode of LLM Self-Training**  
@@ -2064,7 +2068,7 @@ The following additions are explicitly listed in Table 4, which groups represent
 
 1. **SGM: A Statistical Godel Machine for Risk-Controlled Recursive Self-Modification**  
    [[Paper](https://arxiv.org/abs/2510.10232)] · arXiv:2510.10232  
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Trainer___Optimization-c2410c)  
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Trainer_%2F_Optimization-c2410c)  
    *Taxonomy:* L2. *Updated object(s):* 6.3 Train Schedule.
 
 1. **SHARP: A Self-Evolving Human-Auditable Rubric Policy for Financial Trading Agents**  
@@ -2074,7 +2078,7 @@ The following additions are explicitly listed in Table 4, which groups represent
 
 1. **SIA: Self Improving AI with Harness & Weight Updates**  
    [[Paper](https://arxiv.org/abs/2605.27276)] · arXiv:2605.27276  
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Full--system___Co--evolution-be123c)  
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Full--system_%2F_Co--evolution-be123c)  
    *Taxonomy:* L2. *Updated object(s):* 10.2 Full-system / Co-evolution; 3.6 Scaffold Code; 5.1 Model Weights.
 
 1. **SignalClaw: LLM-Guided Evolutionary Synthesis of Interpretable Traffic Signal Control Skills**  
@@ -2161,7 +2165,7 @@ The following additions are explicitly listed in Table 4, which groups represent
 
 1. **Language Agents as Optimizable Graphs (GPTSwarm)**<br>
    [[Paper](https://arxiv.org/abs/2402.16823)] · arXiv:2402.16823<br>
-   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)<br>
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)<br>
    *Editorial rationale:* Task feedback updates agent-graph connections and node prompts across optimization rounds; the task utility and optimization procedures remain externally specified. *Updated object(s):* 3.1 Workflow / Graph; 1.2 Task Prompt / Template.
 
 </details>
@@ -2192,7 +2196,7 @@ Table 5 identifies the following learner-conditioned future-experience loop, com
 
 1. **SIMA 2: A Generalist Embodied Agent for Virtual Worlds**  
    [[Paper](https://arxiv.org/abs/2512.04797)] · arXiv:2512.04797  
-   ![](https://img.shields.io/badge/-Level--L3-d97706) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Data_Environment-ca8a04)  
+   ![](https://img.shields.io/badge/-Level--L3-d97706) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Data_&_Environment-ca8a04)  
    *Survey-table rationale:* In the full ASKA setting, evaluation feedback directs practice toward weaker skills; later experience is conditioned on the learner's changing capability state. *Updated object(s):* 8.1 Training / Experience Data; 8.2 Task / Curriculum Generator; 8.3 Environment / Simulator.
 
 
@@ -2210,6 +2214,11 @@ Table 5 identifies the following learner-conditioned future-experience loop, com
    [[Paper](https://arxiv.org/abs/2511.16043)] · arXiv:2511.16043  
    ![](https://img.shields.io/badge/-Level--L3-d97706) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Model-1d4ed8)  
    *Taxonomy:* L3. *Updated object(s):* 5.1 Model Weights; 8.2 Task Generator.
+
+1. **ANCHOR: An External LLM-Driven Supervisory Module Facilitating Healthy Evolution in Self-Evolving Systems**  
+   [[Paper](https://arxiv.org/abs/2606.06114)] · arXiv:2606.06114  
+   ![](https://img.shields.io/badge/-Level--L3-d97706) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Model-1d4ed8)  
+   *Taxonomy:* L3. *Updated object(s):* 5.1 Model Weights; 8.2 Task Generator; 1.1 Instruction.
 
 1. **ANCORA: Learning to Question via Manifold-Anchored Self-Play for Verifiable Reasoning**  
    [[Paper](https://arxiv.org/abs/2604.27644)] · arXiv:2604.27644  
@@ -2471,11 +2480,6 @@ Table 5 identifies the following learner-conditioned future-experience loop, com
    ![](https://img.shields.io/badge/-Level--L3-d97706) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Data_&_Environment-ca8a04)  
    *Taxonomy:* L3. *Updated object(s):* 8.2 Task Generator; 5.1 Model Weights.
 
-1. **Towards Healthy Evolution: Exploring the Role and Mechanisms of Human-Agent Interaction in Self-Evolving Systems**  
-   [[Paper](https://arxiv.org/abs/2606.06114)] · arXiv:2606.06114  
-   ![](https://img.shields.io/badge/-Level--L3-d97706) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Model-1d4ed8)  
-   *Taxonomy:* L3. *Updated object(s):* 5.1 Model Weights; 8.2 Task Generator; 1.1 Instruction.
-
 1. **Towards Understanding Self-play for LLM Reasoning**  
    [[Paper](https://arxiv.org/abs/2510.27072)] · arXiv:2510.27072  
    ![](https://img.shields.io/badge/-Level--L3-d97706) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Model-1d4ed8)  
@@ -2544,87 +2548,87 @@ The following additions are explicitly discussed in Table 6 under trajectory dis
 
 1. **DecoEvo: Score-Decoupled Co-Evolution of Solver and Rubric-Generator Skills in Text Space**  
    [[Paper](https://arxiv.org/abs/2607.25675)] · arXiv:2607.25675  
-   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Evaluator_Feedback-a21caf)  
+   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Evaluator_&_Feedback-a21caf)  
    *Survey-table rationale:* Solver and rubric skills co-evolve across iterative rounds with score-independent audits. *Updated object(s):* 7.1 Evaluator / Judge; 4.4 Skill / Macro Library.
 
 1. **Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills**  
    [[Paper](https://arxiv.org/abs/2603.25158)] · arXiv:2603.25158  
-   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Tools_Skills-2563eb)  
+   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Tools_&_Skills-2563eb)  
    *Survey-table rationale:* Error and success analysts merge patches into portable skill documents for later reuse. *Updated object(s):* 4.4 Skill / Macro Library.
 
 1. **Metis: Bridging Text and Code Memory for Self-Evolving Agents**  
    [[Paper](https://arxiv.org/abs/2606.24151)] · arXiv:2606.24151  
-   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Memory_Knowledge-059669)  
+   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Memory_&_Knowledge-059669)  
    *Survey-table rationale:* Text plans and code tools are retained after completed tasks and validated through reuse and sandbox compilation. *Updated object(s):* 2.3 Procedural Memory; 4.3 Tool Implementation.
 
 1. **Library Drift: Diagnosing and Fixing a Silent Failure Mode in Self-Evolving LLM Skill Libraries**  
    [[Paper](https://arxiv.org/abs/2605.19576)] · arXiv:2605.19576  
-   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Tools_Skills-2563eb)  
+   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Tools_&_Skills-2563eb)  
    *Survey-table rationale:* Periodic retention retires low-contribution skills and caps the evolving library. *Updated object(s):* 4.4 Skill / Macro Library.
 
 1. **APEX: Autonomous Policy Exploration for Self-Evolving LLM Agents**  
    [[Paper](https://arxiv.org/abs/2605.21240)] · arXiv:2605.21240  
-   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Memory_Knowledge-059669)  
+   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Memory_&_Knowledge-059669)  
    *Survey-table rationale:* A milestone dependency graph retains episode outcomes and informs later exploration. *Updated object(s):* 2.2 Semantic / Knowledge Memory.
 
 1. **Learning Personalized Agents from Human Feedback**  
    [[Paper](https://arxiv.org/abs/2602.16173)] · arXiv:2602.16173  
-   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Memory_Knowledge-059669)  
+   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Memory_&_Knowledge-059669)  
    *Survey-table rationale:* User clarification confirms and revises persistent preference entries. *Updated object(s):* 2.2 Semantic / Knowledge Memory.
 
 1. **MemToolAgent: Leveraging Memory for Tool-Using Agents Based on Environment and User Feedback**  
    [[Paper](https://arxiv.org/abs/2606.07909)] · arXiv:2606.07909  
-   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Memory_Knowledge-059669)  
+   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Memory_&_Knowledge-059669)  
    *Survey-table rationale:* Tool-use critiques and retrieval policy are updated from environment and user feedback. *Updated object(s):* 2.3 Procedural Memory; 2.5 Memory Operations.
 
 1. **PRACTICE: From Experience to Expertise in Self-Evolving Embodied Agents**  
    [[Paper](https://arxiv.org/abs/2608.30760)] · arXiv:2608.30760  
-   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Tools_Skills-2563eb)  
+   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Tools_&_Skills-2563eb)  
    *Survey-table rationale:* Success/failure contrasts and teacher distillation validate additions to an embodied skill library. *Updated object(s):* 4.4 Skill / Macro Library.
 
 1. **PILOT in the Loop: Live Self-Improvement for Long-Horizon Agents**  
    [[Paper](https://arxiv.org/abs/2608.26530)] · arXiv:2608.26530  
-   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Memory_Knowledge-059669)  
+   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Memory_&_Knowledge-059669)  
    *Survey-table rationale:* Live-run feedback is distilled into persistent procedures and failure modes. *Updated object(s):* 2.3 Procedural Memory.
 
 1. **Evo-Harness: Context-to-Harness Skill Compilation for Self-Evolving Agents**  
    [[Paper](https://arxiv.org/abs/2608.15071)] · arXiv:2608.15071  
-   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Survey-table rationale:* Failed or negatively evaluated tasks trigger reflection and edits to retained harness skill tuples. *Updated object(s):* 3.6 Harness Implementation / Scaffold Code; 4.4 Skill / Macro Library.
 
 1. **Self-Evolving Embodied Agents via Skill-Harness Evolution**  
    [[Paper](https://arxiv.org/abs/2608.11350)] · arXiv:2608.11350  
-   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Survey-table rationale:* Planning guidance and context-selection code are retained and tested through sandbox execution and downstream tasks. *Updated object(s):* 3.1 Workflow / Graph; 1.5 Context Composition.
 
 1. **Evo-Memory: Benchmarking LLM Agent Test-Time Learning with Self-Evolving Memory**  
    [[Paper](https://arxiv.org/abs/2511.20857)] · arXiv:2511.20857  
-   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Memory_Knowledge-059669)  
+   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Memory_&_Knowledge-059669)  
    *Survey-table rationale:* Accumulated agent memory is evaluated over sequential task streams for long-horizon reuse. *Updated object(s):* 2.1 Episodic / Experience Memory.
 
 1. **S3Gym: Can LLMs Turn Self-Testing and Self-Judging into Self-Improvement?**  
    [[Paper](https://arxiv.org/abs/2608.31100)] · arXiv:2608.31100  
-   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Survey-table rationale:* The work compares retained history, summaries, and parameter-update pathways across iterative rounds. *Updated object(s):* 3.4 Verification / Reflection Loop; 2.1 Episodic / Experience Memory.
 
 1. **Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents**  
    [[Paper](https://arxiv.org/abs/2605.30621)] · arXiv:2605.30621  
-   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Survey-table rationale:* It separates the quality of retained harness updates from their execution benefit in fixed solve-evolve rounds. *Updated object(s):* 3.6 Harness Implementation / Scaffold Code.
 
 1. **Rethinking Self-Evolving Agent Skills: Feedback Dynamics over Multiple Rounds**  
    [[Paper](https://arxiv.org/abs/2608.02636)] · arXiv:2608.02636  
-   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Tools_Skills-2563eb)  
+   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Tools_&_Skills-2563eb)  
    *Survey-table rationale:* Skill edits are filtered using task outcomes across multiple rounds. *Updated object(s):* 4.4 Skill / Macro Library.
 
 1. **ASPIRE: Can Models Self-Evolve from Vague Goals?**  
    [[Paper](https://arxiv.org/abs/2608.31111)] · arXiv:2608.31111  
-   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Survey-table rationale:* Verified score improvements determine whether model-weight or harness revisions are retained. *Updated object(s):* 5.1 Model Weights; 3.6 Harness Implementation / Scaffold Code.
 
 1. **Hypothesis-Driven Skill Optimization for LLM Agents**  
    [[Paper](https://arxiv.org/abs/2606.22330)] · arXiv:2606.22330  
-   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Tools_Skills-2563eb)  
+   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Tools_&_Skills-2563eb)  
    *Survey-table rationale:* Candidate skill packages are retained after paired control-and-treatment executions. *Updated object(s):* 4.4 Skill / Macro Library.
 
 
@@ -2635,7 +2639,7 @@ The following additions are explicitly discussed in Table 6 under trajectory dis
 
 1. **Adaptive Orchestration: Scalable Self-Evolving Multi-Agent Systems**  
    [[Paper](https://arxiv.org/abs/2601.09742)] · arXiv:2601.09742  
-   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L4. *Updated object(s):* 3.5 Multi-agent; 2.5 Memory & Knowledge.
 
 1. **Agentic Self-Evolutionary Replanning for Embodied Navigation**  
@@ -2650,18 +2654,13 @@ The following additions are explicitly discussed in Table 6 under trajectory dis
 
 1. **AgentTrust: A Self-Improving Trust Layer for AI-Agent Actions**  
    [[Paper](https://arxiv.org/abs/2606.08539)] · arXiv:2606.08539  
-   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L4. *Updated object(s):* 3.6 Scaffold Code; 2.1 Experience Memory.
 
 1. **AgentX: Towards Agent-Driven Self-Iteration of Industrial Recommender Systems**  
    [[Paper](https://arxiv.org/abs/2606.26859)] · arXiv:2606.26859  
    ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Memory_&_Knowledge-059669)  
    *Taxonomy:* L4. *Updated object(s):* 2.2 Knowledge Memory; 1.1 Instruction; 9.1 Program Code.
-
-1. **An Agentic Framework for Autonomous Materials Computation**  
-   [[Paper](https://arxiv.org/abs/2512.19458)] · arXiv:2512.19458  
-   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Tools_&_Skills-2563eb)  
-   *Taxonomy:* L4. *Updated object(s):* 4.4 Skill Library.
 
 1. **ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation**  
    [[Paper](https://arxiv.org/abs/2604.10992)] · arXiv:2604.10992  
@@ -2675,7 +2674,7 @@ The following additions are explicitly discussed in Table 6 under trajectory dis
 
 1. **Autopoiesis: A Self-Evolving System Paradigm for LLM Serving Under Runtime Dynamics**  
    [[Paper](https://arxiv.org/abs/2604.07144)] · arXiv:2604.07144  
-   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L4. *Updated object(s):* 3.6 Scaffold Code.
 
 1. **BloClaw: An Omniscient, Multi-Modal Agentic Workspace for Next-Generation Scientific Discovery**  
@@ -2763,6 +2762,11 @@ The following additions are explicitly discussed in Table 6 under trajectory dis
    ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Memory_&_Knowledge-059669)  
    *Taxonomy:* L4. *Updated object(s):* 2.1 Experience Memory; 2.2 Knowledge Memory.
 
+1. **VASP Agent: An Agentic Framework for Autonomous First-principles Calculations**  
+   [[Paper](https://arxiv.org/abs/2512.19458)] · arXiv:2512.19458  
+   ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Tools_&_Skills-2563eb)  
+   *Taxonomy:* L4. *Updated object(s):* 4.4 Skill Library.
+
 1. **VizGenie: Toward Self-Refining, Domain-Aware Workflows for Next-Generation Scientific Visualization**  
    [[Paper](https://arxiv.org/abs/2507.21124)] · arXiv:2507.21124  
    ![](https://img.shields.io/badge/-Level--L4-059669) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Tools_&_Skills-2563eb)  
@@ -2774,7 +2778,7 @@ The following additions are explicitly discussed in Table 6 under trajectory dis
 
 ## 5. L5 - From Environmental Adaptation to Meta-Improvement <sub><a href="#readme-top">↑ top</a></sub>
 
-The system improves the mechanism that produces future improvements, including search, evaluation, and research-control policies. **32 papers.**
+The system improves the mechanism that produces future improvements, including search, evaluation, and research-control policies. **33 papers.**
 
 <div align="center">
   <img src="./assets/rsi-l4-l5-meta-improvement.png" width="100%" alt="Comparison of L4 environmental adaptation and L5 recursive meta-improvement. L5 revises and validates the improvement process inherited by successor systems under external human mission, safety, evaluation, and acceptance constraints.">
@@ -2789,13 +2793,14 @@ The system improves the mechanism that produces future improvements, including s
 | [Self-Taught Optimizer](https://arxiv.org/abs/2310.02304) | Recursively improves the code-generation procedure that drives later search rounds. |
 | [Gödel Agent](https://arxiv.org/abs/2410.04444) | Provides a self-referential agent framework that can revise its own improvement routines. |
 | [Darwin Gödel Machine](https://arxiv.org/abs/2505.22954) | Evolves coding agents through evaluated code modifications and inherited successful descendants. |
+| [AIDE²](https://arxiv.org/abs/2609.26457) | Rewrites and selects research-agent harnesses using hidden evaluations across AI R&D tasks. |
 | [Dream-RSI](https://arxiv.org/abs/2609.14858) | Replays past discovery trees to select revised exploration policies for later online search. |
 | [AIRA2](https://arxiv.org/abs/2603.26499) | Targets AI-research-agent bottlenecks through asynchronous experimentation, hidden-consistent evaluation, and interactive ReAct operators. |
 | [MOSS](https://arxiv.org/abs/2605.22794) | Evolves autonomous agents by rewriting source-level system components. |
 | [The Red Queen Gödel Machine](https://arxiv.org/abs/2606.26294) | Co-evolves agents and evaluators, making the improvement criterion part of the meta-level loop. |
 
 <details>
-<summary><strong>Browse the full L5 catalog (32 papers)</strong></summary>
+<summary><strong>Browse the full L5 catalog (33 papers)</strong></summary>
 
 ### Table-derived extensions
 
@@ -2803,18 +2808,18 @@ The following additions are explicitly listed in Table 7 as L5 mechanisms with i
 
 1. **Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation**  
    [[Paper](https://arxiv.org/abs/2310.02304)] · arXiv:2310.02304  
-   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Full_system_Co-evolution-be123c)  
+   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Full--system_%2F_Co--evolution-be123c)  
    *Survey-table rationale:* The current improver receives its own source as an optimization target; selected improver code governs the next program-search round. *Updated object(s):* 10.3 Improvement-loop / Meta-RSI; 9.1 Program / Solution Code.
 
 1. **AIRA2: Overcoming Bottlenecks in AI Research Agents**  
    [[Paper](https://arxiv.org/abs/2603.26499)] · arXiv:2603.26499  
-   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Full_system_Co-evolution-be123c)  
+   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Full--system_%2F_Co--evolution-be123c)  
    *Survey-table rationale:* Research artifacts and a search policy are retained to guide later task experiments under an external research harness and evaluation. *Updated object(s):* 10.3 Improvement-loop / Meta-RSI; 6.5 Search / Meta-optimization Procedure.
 
 
 1. **A-Evolve-Training: Autonomous Post-Training of a 30B Model**  
    [[Paper](https://arxiv.org/abs/2606.20657)] · arXiv:2606.20657  
-   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Trainer___Optimization-c2410c)  
+   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Trainer_%2F_Optimization-c2410c)  
    *Taxonomy:* L5. *Updated object(s):* 6.5 Meta-optimization; 5.1 Model Weights.
 
 1. **Accelerating Scientific Discovery with Autonomous Goal-evolving Agents**  
@@ -2829,7 +2834,7 @@ The following additions are explicitly listed in Table 7 as L5 mechanisms with i
 
 1. **ARYA: A Physics-Constrained Composable & Deterministic World Model Architecture**  
    [[Paper](https://arxiv.org/abs/2603.21340)] · arXiv:2603.21340  
-   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Full--system___Co--evolution-be123c)  
+   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Full--system_%2F_Co--evolution-be123c)  
    *Taxonomy:* L5. *Updated object(s):* 10.3 Meta-RSI; 6.5 Meta-optimization; 5.1 Model Weights.
 
 1. **Autonomous Code Evolution Meets NP-Completeness**  
@@ -2849,7 +2854,7 @@ The following additions are explicitly listed in Table 7 as L5 mechanisms with i
 
 1. **Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents**  
    [[Paper](https://arxiv.org/abs/2505.22954)] · arXiv:2505.22954  
-   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L5. *Updated object(s):* 3.6 Scaffold Code; 4.3 Tool Code.
 
 1. **Differentiable Evolutionary Reinforcement Learning**  
@@ -2859,12 +2864,12 @@ The following additions are explicitly listed in Table 7 as L5 mechanisms with i
 
 1. **Emotion-Gradient Metacognitive RSI (Part I): Theoretical Foundations and Single-Agent Architecture**  
    [[Paper](https://arxiv.org/abs/2505.07757)] · arXiv:2505.07757  
-   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Full--system___Co--evolution-be123c)  
+   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Full--system_%2F_Co--evolution-be123c)  
    *Taxonomy:* L5. *Updated object(s):* 10.3 Meta-RSI.
 
 1. **Escher-Loop: Mutual Evolution by Closed-Loop Self-Referential Optimization**  
    [[Paper](https://arxiv.org/abs/2604.23472)] · arXiv:2604.23472  
-   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Full--system___Co--evolution-be123c)  
+   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Full--system_%2F_Co--evolution-be123c)  
    *Taxonomy:* L5. *Updated object(s):* 10.3 Meta-RSI; 9.1 Program Code.
 
 1. **EvoRubric: Self-Evolving Rubric-Driven RL for Open-Ended Generation**  
@@ -2879,7 +2884,7 @@ The following additions are explicitly listed in Table 7 as L5 mechanisms with i
 
 1. **EvoX: Meta-Evolution for Automated Discovery**  
    [[Paper](https://arxiv.org/abs/2602.23413)] · arXiv:2602.23413  
-   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Full--system___Co--evolution-be123c)  
+   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Full--system_%2F_Co--evolution-be123c)  
    *Taxonomy:* L5. *Updated object(s):* 10.3 Meta-RSI; 3.6 Scaffold Code.
 
 1. **GEAR: Genetic AutoResearch for Agentic Code Evolution**  
@@ -2889,22 +2894,22 @@ The following additions are explicitly listed in Table 7 as L5 mechanisms with i
 
 1. **Gödel Agent: A Self-Referential Agent Framework for Recursive Self-Improvement**  
    [[Paper](https://arxiv.org/abs/2410.04444)] · arXiv:2410.04444  
-   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Full--system___Co--evolution-be123c)  
+   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Full--system_%2F_Co--evolution-be123c)  
    *Taxonomy:* L5. *Updated object(s):* 10.3 Meta-RSI; 3.6 Scaffold Code.
 
 1. **Group-Evolving Agents: Open-Ended Self-Improvement via Experience Sharing**  
    [[Paper](https://arxiv.org/abs/2602.04837)] · arXiv:2602.04837  
-   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L5. *Updated object(s):* 3.6 Scaffold Code; 4.3 Tool Code.
 
 1. **Huxley-Gödel Machine: Human-Level Coding Agent Development by an Approximation of the Optimal Self-Improving Machine**  
    [[Paper](https://arxiv.org/abs/2510.21614)] · arXiv:2510.21614  
-   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L5. *Updated object(s):* 3.6 Scaffold Code; 10.3 Meta-RSI.
 
 1. **Hyperagents**  
    [[Paper](https://arxiv.org/abs/2603.19461)] · arXiv:2603.19461  
-   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Full--system___Co--evolution-be123c)  
+   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Full--system_%2F_Co--evolution-be123c)  
    *Taxonomy:* L5. *Updated object(s):* 10.3 Meta-RSI; 3.6 Scaffold Code.
 
 1. **MetaSkill-Evolve: Recursive Self-Improvement of LLM Agents via Two-Timescale Meta-Skill Evolution**  
@@ -2914,12 +2919,12 @@ The following additions are explicitly listed in Table 7 as L5 mechanisms with i
 
 1. **MOSS: Self-Evolution through Source-Level Rewriting in Autonomous Agent Systems**  
    [[Paper](https://arxiv.org/abs/2605.22794)] · arXiv:2605.22794  
-   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L5. *Updated object(s):* 3.6 Scaffold Code.
 
 1. **Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution**  
    [[Paper](https://arxiv.org/abs/2608.08311)] · arXiv:2608.08311  
-   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness___Workflow-0f766e)  
+   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)  
    *Taxonomy:* L5. *Updated object(s):* 3.6 Scaffold Code; 4.1 Tool Set; 1.5 Context.
 
 1. **Scientific discovery as meta-optimization: a combinatorial optimization case study**  
@@ -2949,7 +2954,7 @@ The following additions are explicitly listed in Table 7 as L5 mechanisms with i
 
 1. **When Your Own Output Becomes Your Training Data: Noise-to-Meaning Loops and a Formal RSI Trigger**  
    [[Paper](https://arxiv.org/abs/2505.02888)] · arXiv:2505.02888  
-   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Full--system___Co--evolution-be123c)  
+   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Full--system_%2F_Co--evolution-be123c)  
    *Taxonomy:* L5. *Updated object(s):* 10.3 Meta-RSI.
 
 1. **Who Grades the Grader? Co-Evolving Evaluation Metrics and Skills for Self-Improving LLM Agents**  
@@ -2957,12 +2962,17 @@ The following additions are explicitly listed in Table 7 as L5 mechanisms with i
    ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Evaluator_&_Feedback-a21caf)  
    *Taxonomy:* L5. *Updated object(s):* 7.1 Judge; 4.4 Skill Library.
 
-### Independently screened addition (2026-09-24)
+### Independently screened additions (2026-09-24–25)
 
 1. **Dream-RSI: Recursive Self-Improvement through Evolving Worlds**<br>
    [[Paper](https://arxiv.org/abs/2609.14858)] · [[Project](https://www.dream-rsi.com/)] · arXiv:2609.14858<br>
-   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Trainer_Optimization-c2410c)<br>
+   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Trainer_%2F_Optimization-c2410c)<br>
    *Editorial rationale:* A policy-development agent revises exploration-policy code using feedback from replayed discovery trees; the selected policy guides the next online search and generates new history for later rounds. The coding agent, model weights, evaluator, and task objective remain fixed. *Updated object(s):* 6.5 Search / Meta-optimization Procedure; 2.1 Experience Memory.
+
+1. **Recursive Self-Improvement of AI Research Agents (AIDE²)**<br>
+   [[Paper](https://arxiv.org/abs/2609.26457)] · arXiv:2609.26457<br>
+   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)<br>
+   *Editorial rationale:* In the main run, a fixed outer-loop research agent rewrites an incumbent inner-loop AI R&D agent's harness, evaluates candidates on private held-out task scores, and uses the best-scoring agent as the next rewrite target. The study reports seven accepted rewrites in eight days; its task families, selection benchmark, evaluation budget, and outer-loop selection rule remain fixed. A separate ignition test uses a discovered agent as the outer-loop improver but does not establish that it outperforms the original one. *Updated object(s):* 3.6 Scaffold Code; 6.5 Search / Meta-optimization Procedure; 2.1 Experience Memory.
 
 </details>
 
@@ -2975,7 +2985,7 @@ To add or revise an entry, keep its evidence auditable. Provide a stable identif
 ```markdown
 1. **Paper Title**  
    [[Paper](https://arxiv.org/abs/YYMM.NNNNN)] · arXiv:YYMM.NNNNN  
-   ![](https://img.shields.io/badge/-Level--L3-d97706) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Data_Environment-ca8a04)  
+   ![](https://img.shields.io/badge/-Level--L3-d97706) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Data_&_Environment-ca8a04)  
     *Taxonomy:* L3. *Updated object(s):* 8.1 Experience Data.
 ```
 
@@ -3001,15 +3011,16 @@ If you find this repository or its taxonomy useful, please cite the companion su
 
 ## Data Provenance and Validation <sub><a href="#readme-top">↑ top</a></sub>
 
-This document combines a 491-paper per-paper taxonomy dataset with 28 additional works selected from the survey's representative Tables 3-7 on 2026-09-11, plus two independently screened papers added on 2026-09-24. The baseline dataset records a title, arXiv ID, primary level, boundary classification, detailed rationale, and updated-object code(s) for every paper. The 28 extensions retain the table-derived rationale; the later additions record their editorial rationales separately. Authors and venue metadata are not inferred for catalog entries.
+This document combines a 491-paper per-paper taxonomy dataset with 28 additional works selected from the survey's representative Tables 3-7 on 2026-09-11, plus three independently screened papers added on 2026-09-24 and 2026-09-25. The baseline dataset records a title, arXiv ID, primary level, boundary classification, detailed rationale, and updated-object code(s) for every paper. The 28 extensions retain the table-derived rationale; the later additions record their editorial rationales separately. Authors and venue metadata are not inferred for catalog entries.
 
 Catalog integrity checks:
 
 - **491 / 491** baseline rows have a title, arXiv ID, and valid primary level `L1` to `L5`; each of the **28** extensions has a stable arXiv identifier.
 - The independently screened [GPTSwarm paper](https://arxiv.org/abs/2402.16823) has a stable arXiv identifier and is classified as L2 because it retains feedback-driven changes to agent prompts and graph connectivity under an externally specified task utility.
 - The independently screened [Dream-RSI paper](https://arxiv.org/abs/2609.14858) has a stable arXiv identifier and is classified as L5 because it updates the exploration policy used to generate later improvements while keeping the coding agent and evaluator fixed.
-- **0** duplicate arXiv IDs and **0** duplicate titles were found across the 521 entries.
+- The independently screened [AIDE² paper](https://arxiv.org/abs/2609.26457) has a stable arXiv identifier and is classified as L5 because its fixed outer loop repeatedly rewrites an inner AI R&D agent's improvement procedure, retaining accepted versions as later incumbents; a separate test examines a discovered agent in the outer-loop role.
+- **0** duplicate arXiv IDs and **0** duplicate titles were found across the 522 entries.
 - All IDs match the arXiv identifier pattern `YYMM.NNNNN` (or its four-digit predecessor form).
 - Baseline source labels are preserved rather than inferred from keyword matching. Keyword-only screening would incorrectly omit lower-level but in-scope work such as automatic prompt search.
 
-The per-paper taxonomy dataset remains the authoritative record for the 491-paper baseline. The 28 extensions came from the survey's chapter tables; GPTSwarm and Dream-RSI were reviewed against the same inclusion and classification criteria using their primary papers. Aggregate visualizations should not be used to reconstruct individual paper metadata.
+The per-paper taxonomy dataset remains the authoritative record for the 491-paper baseline. The 28 extensions came from the survey's chapter tables; GPTSwarm, Dream-RSI, and AIDE² were reviewed against the same inclusion and classification criteria using their primary papers. Aggregate visualizations should not be used to reconstruct individual paper metadata.
